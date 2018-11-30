@@ -6,15 +6,33 @@
 		<link rel="stylesheet" href="css/psuedo-style.css">
 	</head>
 	<body>
+		<!--After playing around in excel and failing to optimize beyond a four turn interval (including the use of if statements)
+		I discovered someone had done something very similar in excel for MOO II. After trying in excel I thought it's just
+		too complicated for excel to solve. But as you will see in the hyperlink below to the MOO II Decision Optimization
+		it was more a matter of simplifying the questions I was asking. I highly recommend using the attached link below
+		and fully understanding it's concepts and how they might be applied to this before continuing. Also greater knowledge
+		is required of coding, computer science, AI decisions and algorithms and much much more. I just don't think
+		what I am trying to do here can be effectively solved without much more in depth knowledge.
+		 http://www.gamasutra.com/blogs/PaulTozour/20130908/199797/Decision_Modeling_and_Optimization_in_Game_Design_Part_7_Production_Queues.php-->
 		<h1>Masters of Orion IV: Decision Optimization</h1>
 		<h2>Factors that Play into Decision Making</h2>
 		<p>Masters of Orion is a comprehensive strategy game involving many variables which impact the many paths to
 			victory. While some paths to victory may seem subjective and hard to measure, all aspects of the game involve
 			some mathematics. Some mathematics are much easier and important to discern than others. In the case of Masters
-			of Orion IV diplomacy and espionage are shrouded in unknown equations and probabilities whereas colony
-			management, finances, and science are much more observable and controllable. Because of this my website will
-			focus on the mathematical aspects that affect colonies, finance and science. </p>
-		<h3></h3>Colonies
+			of Orion IV diplomacy and espionage are shrouded in unknown equations and probabilities whereas production,
+			population, finances, and science are much more observable, controllable, and in many respects more important.
+			That isn't to say that ignoring espionage and diplomacy goes without consequence, but it is the economy of your
+			empire that dirves it's success. Because of this my website will focus on the mathematical and relational
+			aspects of these elements where they originate, colony management. Once the corresponding mathematical
+			relationships are
+			fully examined a marginal benefit vs marginal cost framework can be established to help determine which actions
+			arrive at better outcomes. Once that is established then a framework that allows for patronization of certain
+			factors
+			(industry, population growth, science, ships, etc.) can be more fully extrapolated. The outcomes expressed here
+			should be taken as
+			advice and measures for decision making rather than a substitute for it as there are various
+			factors colony management that drive an empire forward. </p>
+		<h3>Colonies</h3>
 		<p>Colonies are the centerpiece to Masters of Orion. They drive the economical, industrial and scientific
 			capabilities of every empire. Indeed no player can win the game without having effective colonies to
 			finance, build and progress their empire. Colonies have various aspects to them which interrelate in various
@@ -74,12 +92,12 @@
 		</ul>
 		<h4>Poplulation Growth</h4>
 		<ul class="colony-attributes">
-				<li>Food Production</li>
-				<li>Race Attributes</li>
-				<li>Random Galactic News Network Events</li>
-				<li>Colony Leader</li>
-				<li>Infastructure</li>
-				<li>Discovery of Related Technologies</li>
+			<li>Food Production</li>
+			<li>Race Attributes</li>
+			<li>Random Galactic News Network Events</li>
+			<li>Colony Leader</li>
+			<li>Infastructure</li>
+			<li>Discovery of Related Technologies</li>
 		</ul>
 		<h4>Industrial Production</h4>
 		<ul class="colony-attributes">
@@ -110,14 +128,31 @@
 		</ul>
 		<h4>Security</h4>
 		<ul class="colony-attributes">
-			<li>Infastructure</li>
+			<li>Infrastructure</li>
 			<li>Race Attributes</li>
 			<li>Colony Leader</li>
 			<li>Discovery of Related Technologies</li>
 			<li>Spies Assigned to Counter Espionage</li>
 		</ul>
+		<h4>Credits</h4>
+		<ul class="colony-attributes">
+			<li>Generated from Population</li>
+			<ul>
+				<li>Population Size</li>
+				<li>Tax Rate</li>
+				<li>Infastructure [UNPROVEN]</li>
+			</ul>
+			<li>Planetary Bonuses</li>
+			<li>Infastructure[UNPROVEN]</li>
+			<li>Infastructure Cost</li>
+			<li>Race Attributes</li>
+			<li>Colony Leader</li>
+			<li>Discovery of Related Technologies {UNPROVEN]</li>
+		</ul>
 		<p>One other element that can play a factor in almost all of these colony attributes is the successful carrying
-			out of foreign espionage. I.e. sabotaging research, poisoning water supplies, manufacturing dissent etc. </p>
+			out of foreign espionage. I.e. sabotaging research, poisoning water supplies, manufacturing dissent
+			etc. </p>
+		<h3></h3>
 		<table class="table">
 			<tr>
 				<th>A</th>
